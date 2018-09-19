@@ -1,0 +1,59 @@
+body {
+    background-image: url('Conference_Choix06.png');
+}
+
+.title {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color : white;
+    margin-bottom: 15px;
+ 
+}
+.text-indication {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color : white;
+    font-size: 7rem;
+
+}
+.border-x3 {
+    border: 3px white solid;
+    border-radius: 10px/10px;
+}
+.border-x6 {
+    border: 6px white solid;
+    border-radius: 10px/10px;
+}
+.suported {
+    background-color: rgba(108, 250, 203, 0.6);
+}
+.unsuported {
+    background-color: rgba(247, 141, 241, 0.6);
+    margin-top: 25px;
+}
+.text-browser {
+    text-align: center;
+}
+.text-browser img {
+    padding: 15px;
+}
+
+.content-game {
+    margin: 25px 0 5px 0;
+}
+
+.icon-image-ako {
+    width: 150px;
+    height: 150px;
+}
+.email {
+    text-align: center;
+    background-color: rgba(113, 212, 241, 0.6);
+}
+.email label {
+    font-size: 2rem;
+    color: blueviolet;
+    cursor: pointer;
+}
+.label-pointer {
+    cursor: pointer;
+}
