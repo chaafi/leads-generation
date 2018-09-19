@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Unity WebGL Player | Smart Advisor</title>
+  <link rel="shortcut icon" href="TemplateData/favicon.ico">
+  <link rel="stylesheet" href="TemplateData/style.css">
+  <link rel="stylesheet" href="TemplateData/bootstrap-3.3.7/css/bootstrap.min.css">
+  <script src="TemplateData/jquery-3.3.1/jquery.3.3.1.min.js"></script>
+  <script src="TemplateData/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+  <script src="TemplateData/UnityProgress.js"></script>
+  <script src="Build/UnityLoader.js"></script>
+  <script src="Build/fullScreenView.js"></script>
+  <script>
+    var gameInstance = UnityLoader.instantiate("gameContent", "Build/test_ticket_resto.json", { onProgress: UnityProgress });
+  </script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <h1 class="text-center title">Smart Advisor : Employer's Quest</h1>
+    </div>
+    <div class="row">
+
+      <div class="col-sm-2 text-browser">
+        <div class="border-x3 suported">
+          <h3>Broswer supportati</h3>
+          <img src="TemplateData/logo/edge_64x64.png">
+          <img src="TemplateData/logo/firefox_64x64.png">
+          <img src="TemplateData/logo/safari_64x64.png">
+          <img src="TemplateData/logo/opera_64x64.png">
+        </div>
+        <div class="border-x3 unsuported">
+          <h3>Non supportato</h3>
+          <img src="TemplateData/logo/phone_64x64.png">
+          <img src="TemplateData/logo/chrome_64x64.png">
+        </div>
+      </div>
+      <div class="col-sm-offset-1 col-sm-6 content-game">
+        <div class="row">
+          <div class="row border-x6">
+            <div id="gameContent"></div>
+          </div>
+        </div>
+        <div class="row text-indication">
+          <div class="col-sm-10">
+            Entra a schemo intero
+          </div>
+          <div class="col-sm-2">
+            <label class="glyphicon glyphicon-fullscreen text-primary label-pointer" aria-hidden="true" onclick="gameInstance.SetFullscreen(1)"></label>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-offset-1 col-sm-2">
+        <div class="border-x3 email">
+          <img src="TemplateData/logo_akosolutions_transparency.png" class="icon-image-ako">
+          <h2>Contattaci</h2>
+          <a href="mailto:>advisor@ako.soluitions?" target="_top">
+            <label>advisor@ako.soluitions</label>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
